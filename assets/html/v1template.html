@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+	<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+	<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Set the viewport width to device width for mobile -->
+		<meta name="viewport" content="width=device-width" />
+
+		<title>FuelPHP &raquo; v{{VERSION}} Documentation</title>
+
+		<!-- Metadata -->
+		<meta name="author" content="Harro Verton">
+		<meta name="copyright" content="2012 Exite Web Development Services">
+		<meta name="description" content="fuelphp.com documentation">
+		<meta name="keywords" content="" />
+
+		<!-- Get us some stylesheets -->
+		<link href="{{BASEURL}}assets/css/base.css" rel="stylesheet" type="text/css" id="camera-css" />
+		<link href="{{BASEURL}}assets/css/framework.css" rel="stylesheet" type="text/css" />
+		<link href="{{BASEURL}}assets/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="{{BASEURL}}assets/css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" />
+
+		<link href="{{BASEURL}}assets/syntaxhighlighter/css/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+		<link href="{{BASEURL}}assets/syntaxhighlighter/css/shThemeEclipse.css" rel="stylesheet" type="text/css" />
+
+		<!-- and the favicon -->
+		<link href="{{BASEURL}}assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		<!-- Get us some scripts as well -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="{{BASEURL}}assets/js/dropdown.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/tinynav.min.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/jquery.fancybox.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/jquery.clickable.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/jquery.cooki.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/jquery.ui.totop.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/jquery.twitter.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/theme-functions.js" type="text/javascript"></script>
+		<script src="{{BASEURL}}assets/js/global.js" type="text/javascript"></script>
+
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shCore.js"></script>
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shBrushJScript.js"></script>
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shBrushPhp.js"></script>
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shBrushPlain.js"></script>
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shBrushDiff.js"></script>
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shBrushBash.js"></script>
+		<script type="text/javascript" src="{{BASEURL}}assets/syntaxhighlighter/js/shBrushCss.js"></script>
+
+		<!-- IE Fix for HTML5 Tags -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Google Analytics -->
+	</head>
+	<body>
+		<!-- message area -->
+		<!-- header start here -->
+		<header>
+			<div id="main-wrapper">
+				<div class="row">
+
+					<!-- logo start here -->
+					<div class="logo">
+						<a href="{{BASEURL}}" title="To the homepage..."><img alt="FuelPHP Logo" src="{{BASEURL}}assets/img/logo.png" /></a>
+					</div>
+					<!-- logo ends here -->
+
+					<!-- mainmenu start here -->
+					<div class="mainmenu">
+						&nbsp;
+					</div>
+					<!-- mainmenu ends here -->
+				</div>
+			</div>
+		</header>
+		<!-- header end here -->
+
+		<!-- front slogan and button start here -->
+		<div class="front-wrapper">
+			<div class="row">
+				<div class="front-shadow">
+					<img alt="" src="http://fuelphp.catwoman.exite.local/addons/shared_addons/themes/fuel/img/front-wrapper-bg.png" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<section id="intro" class="page-chunk">
+						<div class="page-chunk-pad">
+							<div class="">
+								<h1>FuelPHP v{{VERSION}} - Documentation</h1>
+								<h5>FuelPHP is a simple, flexible, community driven PHP 5.3+ framework, based on the best ideas of other frameworks, with a fresh start!</h5>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- front slogan and button end here -->
+
+		<!-- maincontent start here -->
+		<div id="content-wrapper">
+			<div id="docs" class="row">
+				<div class="three columns">
+					<div class="btn_list">
+						<button class="btn small expand_all">Expand all</button>
+						<button class="btn small collapse_all">Collapse all</button>
+					</div>
+					<div id="menu_list">
+						{{INDEX}}
+					</div>
+				</div>
+				<div class="nine columns">
+					{{CONTENT}}
+				</div>
+			</div>
+		</div>
+		<!-- maincontent end here -->
+
+		<!-- footer line start here -->
+		<footer>
+			<div class="row">
+				<div class="four columns">
+					<h5>Quick links</h5>
+					<ul class="square">
+						<li><a href="http://fuelphp.com/about" class="first">The team</a></li>
+						<li><a href="http://github.com/fuel" class="">FuelPHP on GitHub</a></li>
+						<li><a href="http://fuelphp.com/dev-docs" class="">Development Docs</a></li>
+						<li><a href="http://fuelphp.com/dev-api" class="last">Development API</a></li>
+
+					</ul>
+				</div>
+				<div class="four columns">
+				 </div>
+				<div class="four columns">
+					<h5>Twitter feed</h5>
+					<!-- Begin of Twitter Box -->
+					<div id="twitter-box">
+						<div id="twitter"></div>
+					</div>
+					<!-- End of Twitter Box -->
+
+					<!-- Noscript Notification when your Javascript not active -->
+					<div id="twitter-noscript">
+						<p>Hi, your javascript is off..!! for optimal results on this site please enable javascript in your browser</p>
+					</div>
+					<!-- End of Noscript Notification when your Javascript not active -->
+				</div>
+			</div>
+			<div class="copyright-wrapper">
+				<div class="row">
+					<div class="four columns">
+						<a href="http://exite.eu" target="_blank">Hosting sponsored by Exite BV</a>
+					</div>
+					<div class="four columns text-center">
+						<p>© Copyright 2010-{{YEAR}} fuelphp.com</p>
+					</div>
+					<div class="four columns">
+						<ul class="social-share">
+							<li><a href="http://twitter.com/fuelphp" target="_blank"><img src="{{BASEURL}}assets/img/socials/tw-icon.png" alt="" /></a></li>
+							<li><a href="http://www.facebook.com/pages/FuelPHP/120778634657454" target="_blank"><img src="{{BASEURL}}assets/img/socials/fb-icon.png" alt="" /></a></li>
+							<li><a href="http://fuelphp.com/blogs/rss" target="_blank"><img src="{{BASEURL}}assets/img/socials/rss-icon.png" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer line end here -->
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script type="text/javascript">$('#noscript').remove();</script>
+	</body>
+</html>

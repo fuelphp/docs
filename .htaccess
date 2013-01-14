@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+	RewriteBase /markdown
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d [OR]
+	RewriteCond $1 ^$
+
+	RewriteRule ^(.*)$ /markdown/index.php?rewrite=1&page=$1 [L]
+
+</IfModule>
