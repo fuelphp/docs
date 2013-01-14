@@ -16,7 +16,7 @@
  */
 
 // FuelPHP version of these docs
-define('VERSION', '1.5-dev');
+define('VERSION', '2.0-dev');
 
 // documentation page template to use
 define('TEMPLATE', 'assets/html/v1template.html');
